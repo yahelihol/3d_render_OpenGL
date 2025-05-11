@@ -144,9 +144,16 @@ while True:
     draw_sphere(0.1, 40, 40)
 
     glTranslatef(0.0, 1.5, 1.9)
-    glColor3f(1.0, 0.3, 0.6)
+    glColor3f(0.6, 0.6, 0.9)
     glLineWidth(4.0)
-    draw_torus(1, .8, 3, 3)
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE)
+    draw_octahedron()
+
+    glTranslatef(0.0, 1.5, 1.9)
+    glColor3f(0.1, 0.8, 0.6)
+
+    draw_torus(2, 0.8, 32, 32)
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL)  # Reset to normal after
 
     glPopMatrix()
 
