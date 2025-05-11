@@ -146,7 +146,7 @@ while True:
     glTranslatef(0.0, 1.5, 1.9)
     glColor3f(0.6, 0.6, 0.9)
     glLineWidth(4.0)
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE)
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE) # wireframe
     draw_octahedron()
 
     glTranslatef(0.0, 1.5, 1.9)
