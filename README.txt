@@ -14,6 +14,6 @@ Also, other predefined shapes can be added to the scene, found in draw_3d_shapes
 
 move: WASD + Shift, SpaceBar
 look: mouse
-zoom; mousewheel
+zoom: mousewheel
 
 
